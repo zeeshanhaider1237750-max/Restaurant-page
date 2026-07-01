@@ -1,6 +1,7 @@
-import headerImage from "./header-back-img.jpg";
+import headerImage from "./images/header-back-img.jpg";
 import { homeLayoutFunction } from "./home.js";
-
+import {menuLayoutFunction} from "./menu.js";
+ 
 const mainHeader = document.querySelector("header");
 const headingOne = document.querySelector("h1");
 const paragraphOne = document.querySelector("p");
@@ -14,7 +15,7 @@ const content = document.querySelector("#content");
 bodyStyling.style.display = "grid";
 bodyStyling.style.minHeight = "auto";
 bodyStyling.style.gridTemplateRows = "auto 1fr";
-bodyStyling.style.gridTemplateColumns = "auto";
+bodyStyling.style.gridTemplateColumns = "1fr";
 
 mainHeader.style.backgroundImage = `url(${headerImage})`;
 mainHeader.style.backgroundSize = "cover";
@@ -60,7 +61,7 @@ buttonS.forEach((button) => {
   });
 });
 
-// content.style.height = "100%";
+content.style.height = "100%";
 
 content.innerHTML = "";
 content.appendChild(homeLayoutFunction());
@@ -70,6 +71,10 @@ buttonS.forEach((button) => {
     if (button.innerText === "Home") {
       content.innerHTML = "";
       content.appendChild(homeLayoutFunction());
+    }
+    else if(button.innerText === "Menu"){
+       content.innerHTML = "";
+       content.appendChild(menuLayoutFunction());
     }
   });
 });

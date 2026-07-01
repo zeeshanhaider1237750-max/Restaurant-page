@@ -50,10 +50,12 @@ export let homeLayoutFunction = () => {
   homeBox.style.flexDirection = "column";
   homeBox.style.justifyContent = "center"
   homeBox.style.textAlign = "center";
-  homeBox.style.height = "100%";
+  homeBox.style.minHeight = "62.5vh";
   homeBox.style.alignItems = "center";
+  homeBox.style.backgroundColor = "grey";
+  homeBox.style.margin = "0";
   
-  homeHeading.style.height = "20%";
+  homeHeading.style.height = "auto";
 
   headOne.style.fontWeight = "700";
   headOne.style.padding = "1rem";
@@ -61,7 +63,7 @@ export let homeLayoutFunction = () => {
   homeTxt.style.display = "flex";
   homeTxt.style.flexDirection = "column";
   homeTxt.style.textAlign = "center";
-  homeTxt.style.height = "60%";
+  homeTxt.style.height = "auto";
   homeTxt.style.gap = "1.4rem";
   homeTxt.style.width = "40%";
 
@@ -71,7 +73,7 @@ export let homeLayoutFunction = () => {
 
   paraThree.style.fontSize = "1.1rem";
 
-  homeFooter.style.height = "10%";
+  homeFooter.style.height = "auto";
 
   footerContent.style.fontSize = "1rem";
 
