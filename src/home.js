@@ -52,7 +52,6 @@ export let homeLayoutFunction = () => {
   homeBox.style.textAlign = "center";
   homeBox.style.minHeight = "62.5vh";
   homeBox.style.alignItems = "center";
-  homeBox.style.backgroundColor = "grey";
   homeBox.style.margin = "0";
   
   homeHeading.style.height = "auto";

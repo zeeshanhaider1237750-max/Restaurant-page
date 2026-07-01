@@ -1,6 +1,7 @@
 import headerImage from "./images/header-back-img.jpg";
 import { homeLayoutFunction } from "./home.js";
 import {menuLayoutFunction} from "./menu.js";
+import {aboutLayoutFunction} from "./about.js";
  
 const mainHeader = document.querySelector("header");
 const headingOne = document.querySelector("h1");
@@ -75,6 +76,10 @@ buttonS.forEach((button) => {
     else if(button.innerText === "Menu"){
        content.innerHTML = "";
        content.appendChild(menuLayoutFunction());
+    }
+    else if(button.innerText === "About"){
+      content.innerHTML = "";
+      content.appendChild(aboutLayoutFunction());
     }
   });
 });
